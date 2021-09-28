@@ -1,0 +1,185 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #333;
+    color: #FFFFFF;
+    font-family: Consolas;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+li a:hover{
+    font-weight: bold;
+    background-color: #add8e6;
+    padding: 20px;
+}
+
+#mod1:hover, #mod2:hover{
+    background-color: #add8e6;
+}
+
+#container{
+    width: 1024px;
+    margin: 0px auto;
+}
+
+#pageheader{
+    background-color: #808080;
+    height: 130px;
+}
+
+#headerimg{
+    margin: 5px;
+    border-radius: 5px;
+    width: 120px;
+}
+
+#menubar{
+    background-color: #4e5deb;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+#content{
+    float: left;
+    width: 768px;
+}
+
+#modscontent{
+
+}
+
+#sidetw{
+    background-color: #1da1f2;
+    float: left;
+    border-radius: 10px;
+    width: 256px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sidetwtitle{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#sidetwtext{
+    margin: 6px;
+}
+
+#sideyt{
+    background-color: #FF0000;
+    float: right;
+    border-radius: 10px;
+    width: 256px;
+    margin-bottom: 10px;
+}
+
+#sideyttitle{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#sideyttext{
+    margin: 6px;
+}
+
+#sidediscord{
+    float: right;
+    margin-bottom: 10px;
+}
+
+
+#pagefooter{
+    background-color: #1e90ff;
+    clear: both;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#pagefootertext{
+    margin: 4px;
+}
+
+#article1, #article2{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+    padding-bottom: 10px;
+}
+
+#article1text, #article2text{
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#article1banner, #article2banner{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#mod1{
+    float: left;
+    width: 507px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+}
+
+#mod2{
+    float: left;
+    width: 507px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+}
+
+#mod1logo, #mod2logo{
+    float: left;
+    margin: 12px;
+}
+
+#mod1text, #mod2text{
+    margin: 12px;
+}
+
+#mod1title, #mod2title{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mod1info, #mod2info{
+
+}
