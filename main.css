@@ -38,7 +38,7 @@ li a:hover{
 }
 
 #mod1:hover, #mod2:hover{
-    background-color: #add8e6;
+    background-color: #808080;
 }
 
 #container{
@@ -175,7 +175,6 @@ li a:hover{
 }
 
 #mod1title, #mod2title{
-    color: #000000;
     font-size: 20px;
     font-weight: bold;
 }
