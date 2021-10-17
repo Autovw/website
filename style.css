@@ -4,9 +4,9 @@
 }
 
 body{
+    font-family: Gotham SSm A,Gotham SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-seri;
     background-color: #333;
     color: #FFFFFF;
-    font-family: Consolas;
 }
 
 ul{
@@ -32,7 +32,6 @@ li a{
 }
 
 li a:hover{
-    font-weight: bold;
     background-color: #add8e6;
     padding: 20px;
 }
@@ -227,7 +226,6 @@ li a:hover{
 }
 
 #anmenu li a:hover{
-    font-weight: bold;
     background-color: #add8e6;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -250,13 +248,13 @@ li a:hover{
     background-color: #444444;
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #andownloads li a:hover{
     color: #444444;
-    font-weight: bold;
     background-color: #add8e6;
     border-radius: 10px;
     padding-top: 10px;
