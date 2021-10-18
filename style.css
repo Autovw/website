@@ -182,11 +182,11 @@ li a:hover{
 
 }
 
-#ancontent{
+#modcontent{
 
 }
 
-#anheader, #moddownloads{
+#modheader, #moddownloads{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -195,23 +195,23 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#anbanner{
+#modbanner{
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-#anheadertitle{
+#modheadertitle{
     margin-top: 10px;
     margin-left: 10px;
     font-size: 24px;
 }
 
-#anheaderdesc{
+#modheaderdesc{
     margin: 10px;
 }
 
-#anmenu{
+#modmenu{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #4e5deb;
@@ -219,20 +219,16 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#anmenu li a{
+#modmenu li a{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
 }
 
-#anmenu li a:hover{
+#modmenu li a:hover{
     background-color: #add8e6;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#moddownloads{
-    padding-bottom: 20px;
 }
 
 #moddownloadstitle{
@@ -240,7 +236,7 @@ li a:hover{
     font-size: 24px;
 }
 
-#ancat12, #ancat14, #ancat15, #ancat16, #ancat17{
+#modcat12, #modcat14, #modcat15, #modcat16, #modcat17{
     margin: 15px;
     font-size: 20px;
 }
