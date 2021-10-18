@@ -186,7 +186,7 @@ li a:hover{
 
 }
 
-#anheader, #andownloads{
+#anheader, #moddownloads{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -231,7 +231,11 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#andownloadstitle{
+#moddownloads{
+    padding-bottom: 20px;
+}
+
+#moddownloadstitle{
     margin-left: 10px;
     font-size: 24px;
 }
@@ -241,7 +245,7 @@ li a:hover{
     font-size: 20px;
 }
 
-#andownloads li a{
+#moddownloads li a{
     margin: 10px;
     color: #FFFFFF;
     border-radius: 10px;
@@ -253,7 +257,7 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#andownloads li a:hover{
+#moddownloads li a:hover{
     color: #444444;
     background-color: #add8e6;
     border-radius: 10px;
