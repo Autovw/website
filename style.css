@@ -82,6 +82,7 @@ li a:hover{
     width: 256px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-bottom: 1px;
 }
 
 #sidetwtitle{
@@ -95,10 +96,10 @@ li a:hover{
 
 #sideyt{
     background-color: #FF0000;
-    float: right;
     border-radius: 10px;
     width: 256px;
     margin-bottom: 10px;
+    padding-bottom: 1px;
 }
 
 #sideyttitle{
