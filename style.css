@@ -9,11 +9,11 @@ body{
     color: #FFFFFF;
 }
 
-ul{
+.ul{
     list-style-type: none;
 }
 
-li{
+.li{
     display: inline-block;
     text-align: center;
     list-style: none;
@@ -201,7 +201,7 @@ li a:hover{
 
 }
 
-#modheader, #moddownloads{
+#modheader{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -246,7 +246,7 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#moddownloadstitle{
+.modtitle{
     margin-left: 10px;
     font-size: 24px;
 }
@@ -256,7 +256,14 @@ li a:hover{
     font-size: 20px;
 }
 
+
 #moddownloads{
+    width: 507px;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -278,4 +285,28 @@ li a:hover{
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#modfeatures{
+    width: 507px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modfeatures .featurelist{
+    margin: 10px;
+}
+
+#modfeatures .feature{
+    margin-left: 20px;
+}
+
+#featureimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
