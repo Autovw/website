@@ -154,7 +154,6 @@ li a:hover{
     width: 507px;
     margin-top: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
     background-color: #545454;
 }
@@ -166,6 +165,12 @@ li a:hover{
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: #545454;
+}
+
+@media screen and (max-width: 950px) {
+    #modscontent{
+        display: grid;
+    }
 }
 
 #mod1logo, #mod2logo{
