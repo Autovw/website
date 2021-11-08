@@ -36,50 +36,50 @@ li a:hover{
     padding: 20px;
 }
 
-#mod1:hover, #mod2:hover{
-    background-color: #808080;
+img{
+    width: 100%;
+    height: 100%;
 }
 
 #container{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0px auto;
 }
 
 #pageheader{
     background-color: #545454;
-    height: 130px;
+    width: 100%;
+    max-height: 130px;
 }
 
 #headerimg{
     margin: 5px;
     border-radius: 5px;
-    width: 120px;
+    max-width: 120px;
 }
 
 #menubar{
     background-color: #4e5deb;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #content{
     float: left;
-    width: 768px;
-}
-
-#modscontent{
-
+    width: 75%;
 }
 
 /* sidebar */
 #homesidebar{
     float: right;
+    width: 25%;
 }
 
 #sidetw{
     background-color: #1da1f2;
     border-radius: 10px;
-    width: 256px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 1px;
@@ -97,7 +97,7 @@ li a:hover{
 #sideyt{
     background-color: #FF0000;
     border-radius: 10px;
-    width: 256px;
+    width: 100%;
     margin-bottom: 10px;
     padding-bottom: 1px;
 }
@@ -113,6 +113,19 @@ li a:hover{
 
 #sidediscord{
     margin-bottom: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #content{
+        clear: both;
+        width: 100%;
+    }
+
+    #homesidebar{
+        clear: both;
+        width: 100%;
+    }
 }
 
 /* footer */
@@ -128,7 +141,7 @@ li a:hover{
     margin: 4px;
 }
 
-#article1, #article2{
+.article{
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -137,57 +150,61 @@ li a:hover{
     padding-bottom: 10px;
 }
 
-#article1text, #article2text{
+.articletext{
     padding: 8px;
     font-size: 20px;
     text-align: center;
 }
 
-#article1banner, #article2banner{
+.articlebanner{
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-#mod1{
+/* mods page stuff */
+#modscontent{
+    padding: 5px;
+}
+
+.mod{
     float: left;
-    width: 507px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 49%;
+    margin: 5px;
     border-radius: 10px;
     background-color: #545454;
 }
 
-#mod2{
-    float: left;
-    width: 507px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #545454;
+.mod:hover{
+    background-color: #808080;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1010px) {
     #modscontent{
         display: grid;
     }
+
+    .mod{
+        width: 98%;
+    }
 }
 
-#mod1logo, #mod2logo{
+.modlogo{
     float: left;
+    max-width: 128px;
     margin: 12px;
 }
 
-#mod1text, #mod2text{
+.modtext{
     margin: 12px;
 }
 
-#mod1title, #mod2title{
+.modtitle{
     font-size: 20px;
     font-weight: bold;
 }
 
-#mod1info, #mod2info{
+.modinfo{
 
 }
 
@@ -202,6 +219,7 @@ li a:hover{
     font-size: 90%;
 }
 
+/* mod pages */
 #modcontent{
 
 }
@@ -263,7 +281,7 @@ li a:hover{
 
 
 #moddownloads{
-    width: 507px;
+    width: 49.5%;
     float: left;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -293,13 +311,25 @@ li a:hover{
 }
 
 #modfeatures{
-    width: 507px;
+    width: 49.5%;
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: #545454;
     float: right;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    #moddownloads{
+        clear: both;
+        width: 100%;
+    }
+
+    #modfeatures{
+        clear: both;
+        width: 100%;
+    }
 }
 
 #modfeatures .featurelist{
