@@ -383,7 +383,7 @@ img{
     font-size: 24px;
 }
 
-#modcat12, #modcat14, #modcat15, #modcat16, #modcat17{
+.modcat {
     margin: 15px;
     font-size: 20px;
 }
