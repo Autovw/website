@@ -1,55 +1,55 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: Gotham SSm A,Gotham SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-seri;
     background-color: #333;
     color: #FFFFFF;
 }
 
 /* list styles and stuff, no idea why it's such a mess */
-.ul{
+.ul {
     list-style-type: none;
 }
 
-.li{
+.li {
     display: inline-block;
     text-align: center;
     list-style: none;
 }
 
-a{
+a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-li a{
+li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
 }
 
-li a:hover{
+li a:hover {
     background-color: #add8e6;
     padding: 20px;
 }
 
 /* image stuff */
-img{
+img {
     width: 100%;
     height: 100%;
 }
 
 /* all the content is placed in this bad boy */
-#container{
+#container {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-#pageheader{
+#pageheader {
     background-color: #545454;
     width: 100%;
     max-height: 130px;
@@ -75,7 +75,7 @@ img{
     width: 100%;
 }
 
-#menubar{
+#menubar {
     background-color: #4e5deb;
     width: 100%;
     padding-top: 20px;
@@ -128,10 +128,7 @@ img{
         border-radius: 9px;
     }
 
-    /* https://codepen.io/kevinpowell/pen/jxppmr?editors=1100 */
-
     nav {
-        background-color: #4e5deb;
         clear: both;
         text-align: left;
         top: 100%;
@@ -389,7 +386,7 @@ img{
 }
 
 
-#moddownloads{
+#moddownloads {
     width: 49.5%;
     float: left;
     margin-bottom: 10px;
@@ -399,7 +396,7 @@ img{
     padding-bottom: 20px;
 }
 
-#moddownloads li a{
+#moddownloads li a {
     margin: 10px;
     color: #FFFFFF;
     border-radius: 10px;
@@ -411,7 +408,7 @@ img{
     padding-bottom: 10px;
 }
 
-#moddownloads li a:hover{
+#moddownloads li a:hover {
     color: #444444;
     background-color: #add8e6;
     border-radius: 10px;
@@ -419,7 +416,7 @@ img{
     padding-bottom: 10px;
 }
 
-#modfeatures{
+#modfeatures {
     width: 49.5%;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -430,26 +427,26 @@ img{
 }
 
 @media screen and (max-width: 760px) {
-    #moddownloads{
+    #moddownloads {
         clear: both;
         width: 100%;
     }
 
-    #modfeatures{
+    #modfeatures {
         clear: both;
         width: 100%;
     }
 }
 
-#modfeatures .featurelist{
+#modfeatures .featurelist {
     margin: 10px;
 }
 
-#modfeatures .feature{
+#modfeatures .feature {
     margin-left: 20px;
 }
 
-#featureimg{
+#featureimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
