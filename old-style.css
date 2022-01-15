@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Gotham SSm A,Gotham SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-seri;
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+/* list styles and stuff, no idea why it's such a mess */
+.ul {
+    list-style-type: none;
+}
+
+.li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: #add8e6;
+    padding: 20px;
+}
+
+/* image stuff */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* all the content is placed in this bad boy */
+#container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#pageheader {
+    background-color: #545454;
+    width: 100%;
+    max-height: 130px;
+}
+
+#headerimg {
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 120px;
+}
+
+.maintenance {
+    background-color: #ffff00;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* menu stuff */
+#menu {
+    width: 100%;
+}
+
+#menubar {
+    background-color: #4e5deb;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .li {
+        display: revert;
+        text-align: left;
+        padding: 0.75em;
+    }
+
+    .li a {
+        padding: 20px;
+    }
+
+    .li a:hover {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #menu {
+        background-color: #4e5deb;
+    }
+
+    .menu-toggle {
+
+    }
+
+    .menu-toggle-label {
+        float: right;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .menu-toggle-label span {
+        display: block;
+        background: #FFFFFF;
+        height: 5px;
+        margin: 4px;
+        width: 2em;
+        border-radius: 9px;
+    }
+
+    nav {
+        clear: both;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    .menu-toggle:checked ~ nav {
+        transform: scale(1,1);
+    }
+
+    .menu-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+/* sidebar */
+#homesidebar{
+    float: right;
+    width: 25%;
+}
+
+#sidetw{
+    background-color: #1da1f2;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+}
+
+#sidetwtitle{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#sidetwtext{
+    margin: 6px;
+}
+
+#sideyt{
+    background-color: #FF0000;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+}
+
+#sideyttitle{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#sideyttext{
+    margin: 6px;
+}
+
+#sidediscord{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #content{
+        clear: both;
+        width: 100%;
+    }
+
+    #homesidebar{
+        clear: both;
+        width: 100%;
+    }
+}
+
+/* footer */
+#pagefooter{
+    background-color: #1e90ff;
+    clear: both;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#pagefootertext{
+    margin: 4px;
+}
+
+.article{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    padding-bottom: 10px;
+}
+
+.articletext{
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.articlebanner{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* mods page stuff */
+#modscontent{
+    padding: 5px;
+}
+
+.mod{
+    float: left;
+    width: 49%;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #545454;
+}
+
+.mod:hover{
+    background-color: #808080;
+}
+
+@media screen and (max-width: 1010px) {
+    #modscontent{
+        display: grid;
+    }
+
+    .mod{
+        width: 98%;
+    }
+}
+
+.modlogo{
+    float: left;
+    max-width: 128px;
+    margin: 12px;
+}
+
+.modtext{
+    margin: 12px;
+}
+
+.modtitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modinfo{
+
+}
+
+#modscontent .modversion{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #444444;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+/* mod pages */
+#modcontent{
+
+}
+
+#modheader{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modbanner{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#modheadertitle{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+#modheaderdesc, #modlicense{
+    margin: 10px;
+}
+
+#modmenu{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4e5deb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modmenu li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#modmenu li a:hover{
+    background-color: #add8e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modtitle{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.modcat {
+    margin: 15px;
+    font-size: 20px;
+}
+
+
+#moddownloads {
+    width: 49.5%;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#moddownloads li a {
+    margin: 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: #444444;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#moddownloads li a:hover {
+    color: #444444;
+    background-color: #add8e6;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#modfeatures {
+    width: 49.5%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #545454;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    #moddownloads {
+        clear: both;
+        width: 100%;
+    }
+
+    #modfeatures {
+        clear: both;
+        width: 100%;
+    }
+}
+
+#modfeatures .featurelist {
+    margin: 10px;
+}
+
+#modfeatures .feature {
+    margin-left: 20px;
+}
+
+#featureimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
