@@ -1,86 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="old-style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Mods - Autovw</title>
 </head>
 <body>
-<div id="container">
-    <header id="pageheader">
-        <img id="headerimg" src="./images/profile-picture.png" alt="Autovw">
-    </header>
+<header>
+    <h1><a href="./index.html">Autovw</a></h1>
+    <input type="checkbox" id="menubar-toggle" class="menubar-toggle">
+    <nav id="menubar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./mods.html">Mods</a></li>
+            <li><a href="https://discord.gg/KP3BBatuw5" target="_blank">Discord</a></li>
+            <li><a href="https://github.com/Autovw" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+    <label for="menubar-toggle" class="menubar-toggle-label">
+        <span></span>
+    </label>
+</header>
 
-    <div class="maintenance">
-        <p><b>The website is currently under maintenance, issues may arise!</b></p>
-    </div>
+<section id="modscontent">
+    <a href="./mods/advanced-netherite.html"><article>
+        <div class="modlogo">
+            <img src="./images/logo-advanced-netherite.png" alt="Advanced Netherite">
+        </div>
+        <div class="modtext">
+            <h2>Advanced Netherite</h2>
+            <p class="modinfo">A vanilla and add-on friendly, open-source mod that adds in more tiers of Netherite!</p>
+            <div class="modloader">FORGE</div>
+            <div class="modloader">FABRIC</div><br/>
+            <div class="modversion">1.18.X</div>
+            <div class="modversion">1.17.X</div>
+            <div class="modversion">1.16.X</div>
+        </div>
+    </article></a>
 
-    <div id="menu">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-toggle-label">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav id="menubar">
-            <ul class="ul">
-                <li class="li"><a href="./index.html">🏠 Home</a></li>
-                <li class="li"><a href="./mods.html">💾 Mods</a></li>
-                <li class="li"><a href="https://discord.gg/KP3BBatuw5" target="_blank">💬 Discord</a></li>
-                <li class="li"><a href="https://github.com/Autovw" target="_blank">📝 GitHub </a></li>
-            </ul>
-        </nav>
-    </div>
+    <a href="./mods/burger-mod.html"><article>
+        <div class="modlogo">
+            <img src="./images/logo-burger-mod.png" alt="Burger Mod">
+        </div>
+        <div class="modtext">
+            <h2>Burger Mod</h2>
+            <p class="modinfo">A mod that adds in burgers and other types of food that extend the vanilla game!</p>
+            <div class="modloader">FORGE</div><br/>
+            <div class="modversion">1.18.X</div>
+            <div class="modversion">1.17.X</div>
+            <div class="modversion">1.16.X</div>
+            <div class="modversion">1.15.X</div>
+            <div class="modversion">+6 more</div>
+        </div>
+    </article></a>
 
-    <section id="modscontent">
-        <a href="./mods/advanced-netherite.html"><article class="mod">
-            <div class="modlogo">
-                <img src="./images/logo-advanced-netherite.png" alt="Advanced Netherite">
-            </div>
-            <div class="modtext">
-                <p class="modtitle">Advanced Netherite</p>
-                <p class="modinfo">A developer and vanilla friendly, open-source mod that adds in more tiers of Netherite!</p>
-                <div class="modversion">1.18.X</div>
-                <div class="modversion">1.17.X</div>
-                <div class="modversion">1.16.X</div>
-            </div>
-        </article></a>
+    <a href="./mods/more-concrete.html"><article>
+        <div class="modlogo">
+            <img src="./images/logo-more-conrete.png" alt="More Concrete">
+        </div>
+        <div class="modtext">
+            <h2>More Concrete</h2>
+            <p class="modinfo">A simple mod that adds more concrete variants into Minecraft!</p>
+            <div class="modloader">FORGE</div><br/>
+            <div class="modversion">1.18.X</div>
+            <div class="modversion">1.17.X</div>
+            <div class="modversion">1.16.X</div>
+            <div class="modversion">1.15.X</div>
+        </div>
+    </article></a>
+</section>
 
-        <a href="./mods/burger-mod.html"><article class="mod">
-            <div class="modlogo">
-                <img src="./images/logo-burger-mod.png" alt="Burger Mod">
-            </div>
-            <div class="modtext">
-                <p class="modtitle">Burger Mod</p>
-                <p class="modinfo">A mod that adds in burgers and other types of food that extend the vanilla game!</p>
-                <div class="modversion">1.18.X</div>
-                <div class="modversion">1.17.X</div>
-                <div class="modversion">1.16.X</div>
-                <div class="modversion">1.15.X</div>
-                <div class="modversion">+2 more</div>
-            </div>
-        </article></a>
-
-        <a href="./mods/more-concrete.html"><article class="mod">
-            <div class="modlogo">
-                <img src="./images/logo-more-conrete.png" alt="More Concrete">
-            </div>
-            <div class="modtext">
-                <p class="modtitle">More Concrete</p>
-                <p class="modinfo">A simple mod that adds more concrete variants into Minecraft!</p>
-                <div class="modversion">1.18.X</div>
-                <div class="modversion">1.17.X</div>
-                <div class="modversion">1.16.X</div>
-                <div class="modversion">1.15.X</div>
-            </div>
-        </article></a>
-    </section>
-
-    <footer id="pagefooter">
-        <p id="pagefootertext">Copyright 2021 &copy; Autovw</p>
-    </footer>
-</div>
+<footer>
+    <p>Copyright 2022 &copy; Autovw</p>
+</footer>
 </body>
 </html>

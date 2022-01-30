@@ -1,453 +1,281 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+* { margin: 0; }
 
 body {
     font-family: Gotham SSm A,Gotham SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-seri;
-    background-color: #333;
-    color: #FFFFFF;
-}
-
-/* list styles and stuff, no idea why it's such a mess */
-.ul {
-    list-style-type: none;
-}
-
-.li {
-    display: inline-block;
-    text-align: center;
-    list-style: none;
+    background-color: #222;
+    color: #fff;
 }
 
 a {
-    color: #FFFFFF;
     text-decoration: none;
+    color: unset;
 }
 
-li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
+a:hover {
+    color: #000;
+    transition: 1s;
 }
 
-li a:hover {
-    background-color: #add8e6;
-    padding: 20px;
-}
-
-/* image stuff */
 img {
-    width: 100%;
-    height: 100%;
-}
-
-/* all the content is placed in this bad boy */
-#container {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-#pageheader {
-    background-color: #545454;
-    width: 100%;
-    max-height: 130px;
-}
-
-#headerimg {
-    margin: 5px;
-    border-radius: 5px;
-    max-width: 120px;
-}
-
-.maintenance {
-    background-color: #ffff00;
-    color: #000000;
-    padding: 5px;
-    border-radius: 5px;
     max-width: 100%;
-    text-align: center;
+    max-height: 100%;
 }
 
-/* menu stuff */
-#menu {
-    width: 100%;
+/* Header */
+header {
+    background-color: #4e5deb;
+    padding: 15px;
+    display: grid;
 }
+
+header h1 { margin-left: 2em; }
 
 #menubar {
-    background-color: #4e5deb;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.menu-toggle {
-    display: none;
+#menubar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
-@media screen and (max-width: 600px) {
-    .li {
-        display: revert;
-        text-align: left;
-        padding: 0.75em;
-    }
+#menubar li {
+    margin-right: 2em;
+    font-size: 24px;
+}
 
-    .li a {
-        padding: 20px;
-    }
+input[type="checkbox"] { display: none; }
 
-    .li a:hover {
-        padding: 20px;
-        width: 100%;
-    }
-
-    #menu {
-        background-color: #4e5deb;
-    }
-
-    .menu-toggle {
-
-    }
-
-    .menu-toggle-label {
-        float: right;
-        top: 0;
-        left: 0;
-        margin-left: 1em;
-        height: 100%;
+/* Responsive part of header */
+@media screen and (max-width: 750px) {
+    header {
+        position: fixed;
         padding: 10px;
-    }
-
-    .menu-toggle-label span {
-        display: block;
-        background: #FFFFFF;
-        height: 5px;
-        margin: 4px;
-        width: 2em;
-        border-radius: 9px;
-    }
-
-    nav {
-        clear: both;
-        text-align: left;
-        top: 100%;
-        left: 0;
+        text-align: center;
+        z-index: 999;
         width: 100%;
-        transform: scale(1,0);
+    }
+
+    header h1 {
+        margin-left: 0;
+    }
+
+    .menubar-toggle {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .menubar-toggle-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 2em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menubar-toggle-label span,
+    .menubar-toggle-label span::before,
+    .menubar-toggle-label span::after {
+        display: block;
+        background: #ffffff;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .menubar-toggle-label span::before,
+    .menubar-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .menubar-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .menubar-toggle-label span::after {
+        top: 7px;
+    }
+
+    #menubar {
+        position: absolute;
+        text-align: left;
+        top: 120%;
+        right: 1em;
+        margin-right: 1em;
+        background: #222224;
+        width: 16em;
+        transform: scale(1, 0);
         transform-origin: top;
         transition: transform 400ms ease-in-out;
+        border-radius: 20px;
+        opacity: 0.9;
+        display: unset;
     }
 
-    nav ul {
+    #menubar ul {
         margin: 0;
         padding: 0;
         list-style: none;
+        display: unset;
     }
 
-    nav li {
-        margin-bottom: 1em;
-        margin-left: 1em;
+    #menubar li {
+        margin: 2em;
     }
 
-    nav a {
-        color: #FFFFFF;
+    #menubar a {
+        color: #fff;
         text-decoration: none;
         opacity: 0;
         transition: opacity 150ms ease-in-out;
     }
 
-    .menu-toggle:checked ~ nav {
-        transform: scale(1,1);
+    #menubar a:hover {
+        color: #000;
     }
 
-    .menu-toggle:checked ~ nav a {
+    .menubar-toggle:checked ~ #menubar {
+        transform: scale(1, 1);
+    }
+
+    .menubar-toggle:checked ~ #menubar a {
         opacity: 1;
         transition: opacity 250ms ease-in-out 250ms;
     }
 
-    input[type="checkbox"] {
-        display: none;
-    }
+    #content, #modscontent, #modcontent { padding-top: 4em; }
 }
 
-#content{
-    float: left;
-    width: 75%;
+/* Content */
+#content, #modscontent {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* sidebar */
-#homesidebar{
-    float: right;
-    width: 25%;
-}
-
-#sidetw{
-    background-color: #1da1f2;
-    border-radius: 10px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
-}
-
-#sidetwtitle{
-    font-size: 20px;
-    margin: 5px;
-}
-
-#sidetwtext{
-    margin: 6px;
-}
-
-#sideyt{
-    background-color: #FF0000;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
-}
-
-#sideyttitle{
-    font-size: 20px;
-    margin: 5px;
-}
-
-#sideyttext{
-    margin: 6px;
-}
-
-#sidediscord{
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-    #content{
-        clear: both;
-        width: 100%;
-    }
-
-    #homesidebar{
-        clear: both;
-        width: 100%;
-    }
-}
-
-/* footer */
-#pagefooter{
-    background-color: #1e90ff;
-    clear: both;
+#content article, #modscontent a {
+    background-color: #333;
     border-radius: 15px;
-    padding: 8px;
-    margin-bottom: 10px;
+    width: 48%;
+    margin: 0.5%;
+    padding: 0.5%;
 }
 
-#pagefootertext{
-    margin: 4px;
-}
-
-.article{
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #545454;
-    padding-bottom: 10px;
-}
-
-.articletext{
-    padding: 8px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.articlebanner{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* mods page stuff */
-#modscontent{
-    padding: 5px;
-}
-
-.mod{
-    float: left;
-    width: 49%;
-    margin: 5px;
-    border-radius: 10px;
-    background-color: #545454;
-}
-
-.mod:hover{
-    background-color: #808080;
-}
-
-@media screen and (max-width: 1010px) {
-    #modscontent{
-        display: grid;
-    }
-
-    .mod{
+@media screen and (max-width: 650px) {
+    #content article {
         width: 98%;
+        margin: 1%;
+        padding: 1%;
     }
 }
 
-.modlogo{
-    float: left;
+/* Mods page */
+#modscontent a article {
+    display: flex;
+}
+
+.modlogo {
     max-width: 128px;
-    margin: 12px;
+    margin: 1%;
 }
 
-.modtext{
-    margin: 12px;
+.modtext {
+    margin: 1%;
 }
 
-.modtitle{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.modinfo{
-
-}
-
-#modscontent .modversion{
+.modloader, .modversion {
     display: inline-block;
-    vertical-align: bottom;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 7px;
-    background-color: #444444;
     border-radius: 10px;
+    background-color: #222224;
     font-weight: bold;
     font-size: 90%;
 }
 
-/* mod pages */
-#modcontent{
-
+@media screen and (max-width: 950px) {
+    #modscontent a article { display: unset; }
 }
 
-#modheader{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #545454;
-    padding-top: 10px;
-    padding-bottom: 10px;
+@media screen and (max-width: 750px) {
+    #modscontent a article { display: flex }
+
+    #modscontent a {
+        width: 98%;
+        margin: 1%;
+        padding: 1%;
+    }
 }
 
-#modbanner{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (max-width: 400px) {
+    #modscontent a article { display: unset; }
 }
 
-#modheadertitle{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 24px;
+/* Mod pages related */
+#modheader {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 1%;
 }
 
-#modheaderdesc, #modlicense{
-    margin: 10px;
-}
-
-#modmenu{
-    margin-top: 10px;
-    margin-bottom: 10px;
+#modmenu {
     background-color: #4e5deb;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-#modmenu li a{
-    color: #FFFFFF;
-    text-decoration: none;
+#modmenu p {
+    display: inline-block;
     font-size: 20px;
+    padding: 15px;
 }
 
-#modmenu li a:hover{
-    background-color: #add8e6;
-    padding-top: 10px;
-    padding-bottom: 10px;
+@media screen and (max-width: 550px) {
+    #modmenu p { display: revert; }
 }
-
-.modtitle{
-    margin-left: 10px;
-    font-size: 24px;
-}
-
-.modcat {
-    margin: 15px;
-    font-size: 20px;
-}
-
 
 #moddownloads {
-    width: 49.5%;
-    float: left;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #545454;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 1%;
 }
 
-#moddownloads li a {
-    margin: 10px;
-    color: #FFFFFF;
-    border-radius: 10px;
-    background-color: #444444;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+.versions { display: flex; flex-wrap: wrap; }
 
-#moddownloads li a:hover {
-    color: #444444;
-    background-color: #add8e6;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#modfeatures {
-    width: 49.5%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #545454;
-    float: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-@media screen and (max-width: 760px) {
-    #moddownloads {
-        clear: both;
-        width: 100%;
-    }
-
-    #modfeatures {
-        clear: both;
-        width: 100%;
-    }
-}
-
-#modfeatures .featurelist {
+.forgeversions {
     margin: 10px;
 }
 
-#modfeatures .feature {
-    margin-left: 20px;
+.fabricversions {
+    margin: 10px;
 }
 
-#featureimg {
+.button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #545454;
+    color: #222;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
 }

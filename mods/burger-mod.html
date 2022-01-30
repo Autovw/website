@@ -1,90 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../old-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
     <title>Burger Mod</title>
 </head>
 <body>
-<div id="container">
-    <header id="pageheader">
-        <img id="headerimg" src="../images/profile-picture.png" alt="Autovw">
-    </header>
-
-    <div class="maintenance">
-        <p><b>The website is currently under maintenance, issues may arise!</b></p>
-    </div>
-
+<header>
+    <h1><a href="../index.html">Autovw</a></h1>
+    <input type="checkbox" id="menubar-toggle" class="menubar-toggle">
     <nav id="menubar">
-        <ul class="ul">
-            <li class="li"><a href="../index.html">🏠 Home</a></li>
-            <li class="li"><a href="../mods.html">💾 Mods</a></li>
-            <li class="li"><a href="https://discord.gg/KP3BBatuw5" target="_blank">💬 Discord</a></li>
-            <li class="li"><a href="https://github.com/Autovw" target="_blank">📝 GitHub </a></li>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../mods.html">Mods</a></li>
+            <li><a href="https://discord.gg/KP3BBatuw5" target="_blank">Discord</a></li>
+            <li><a href="https://github.com/Autovw" target="_blank">GitHub</a></li>
         </ul>
     </nav>
+    <label for="menubar-toggle" class="menubar-toggle-label">
+        <span></span>
+    </label>
+</header>
 
-    <section id="modcontent">
-        <article>
-            <div id="modheader">
-                <img id="modbanner" src="../images/burger-mod-banner.png" width="1000" alt="Burger Mod Banner"/>
-                <p id="modheadertitle">Burger Mod</p>
-                <p id="modheaderdesc">A mod that adds in burgers and other types of food that extend the vanilla game!</p>
-                <p id="modlicense"><b>License:</b> GNU General Public License v3.0</p>
+<section id="modcontent">
+    <article id="modheader">
+        <img src="../images/burger-mod-banner.png" alt="Banner"/>
+        <h2>Burger Mod</h2>
+        <p>A mod that adds in burgers and other types of food that extend the vanilla game!</p>
+        <br/><p><b>License: </b><a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0</a></p>
+    </article>
+
+    <article id="modmenu">
+        <p><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/screenshots" target="_blank">Images</a></p>
+        <p><a href="https://github.com/Autovw/BurgerMod/wiki" target="_blank">Wiki</a></p>
+        <p><a href="https://github.com/Autovw/BurgerMod/issues" target="_blank">Issues</a></p>
+        <p><a href="https://github.com/Autovw/BurgerMod" target="_blank">Source</a></p>
+        <p><a href="https://github.com/Autovw/BurgerMod/releases" target="_blank">GitHub Releases</a></p>
+    </article>
+
+    <article id="moddownloads">
+        <h2>Downloads (CurseForge)</h2>
+        <div class="versions">
+            <div class="forgeversions">
+                <h3>Forge 1.18</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8857" target="_blank">1.18.1</a>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8830" target="_blank">1.18</a>
             </div>
-        </article>
-
-        <article>
-            <div id="modmenu">
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/screenshots" target="_blank">Images</a></li>
-                <li class="li"><a href="https://github.com/Autovw/BurgerMod/wiki" target="_blank">Wiki</a></li>
-                <li class="li"><a href="https://github.com/Autovw/BurgerMod/issues" target="_blank">Issues</a></li>
-                <li class="li"><a href="https://github.com/Autovw/BurgerMod" target="_blank">Source</a></li>
-                <li class="li"><a href="https://github.com/Autovw/BurgerMod/releases" target="_blank">GitHub Releases</a></li>
+            <div class="forgeversions">
+                <h3>Forge 1.17</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8516" target="_blank">1.17.1</a>
             </div>
-        </article>
-
-        <article>
-            <div id="moddownloads">
-                <p class="modtitle">Downloads (CurseForge)</p>
-                <p class="modcat">Forge 1.18</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8857" target="_blank">1.18.1</a></li>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8830" target="_blank">1.18</a></li>
-                <p class="modcat">Forge 1.17</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8516" target="_blank">1.17.1</a></li>
-                <p class="modcat">Forge 1.16</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8203" target="_blank">1.16.5</a></li>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8134" target="_blank">1.16.4</a></li>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8056" target="_blank">1.16.3</a></li>
-                <p class="modcat">Forge 1.15 (Legacy Edition)</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7722" target="_blank">1.15.2</a></li>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7675" target="_blank">1.15.1</a></li>
-                <p class="modcat">Forge 1.14 (Legacy Edition)</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7469" target="_blank">1.14.4</a></li>
-                <p class="modcat">Forge 1.12 (Legacy Edition)</p>
-                <li class="li"><a href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A6756" target="_blank">1.12.2</a></li>
+            <div class="forgeversions">
+                <h3>Forge 1.16</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8203" target="_blank">1.16.5</a>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8134" target="_blank">1.16.4</a>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A8056" target="_blank">1.16.3</a>
             </div>
-
-            <div id="modfeatures">
-                <p class="modtitle">Features</p>
-                <ul class="featurelist">
-                    <li class="feature"><p>4 types of meat burgers.</p></li>
-                    <li class="feature"><p>2 types of fish burgers.</p></li>
-                    <li class="feature"><p>All burgers are available in 3 variants: Egg, Cheese and Champignon!</p></li>
-                    <li class="feature"><p>Golden Burgers, similar to Golden Apples.</p></li>
-                    <li class="feature"><p>Other types of food such as: fries, scrambled eggs, cheese, chicken nuggets and more!</p></li>
-                    <li class="feature"><p>Support for add-ons and datapacks.</p></li>
-                    <img id="featureimg" src="../images/burgermod-creative-tab-2.5.0.png" width="356.5" alt="Burger Mod items as of v2.5.0"/>
-                </ul>
+        </div>
+        <h3>Legacy Edition</h3>
+        <div class="versions">
+            <div class="forgeversions">
+                <h3>Forge 1.15</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7722" target="_blank">1.15.2</a>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7675" target="_blank">1.15.1</a>
             </div>
-        </article>
-    </section>
+            <div class="forgeversions">
+                <h3>Forge 1.14</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A7469" target="_blank">1.14.4</a>
+            </div>
+            <div class="forgeversions">
+                <h3>Forge 1.12</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A6756" target="_blank">1.12.2</a>
+            </div>
+            <div class="forgeversions">
+                <h3>Forge 1.11</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A6452" target="_blank">1.11.2</a>
+            </div>
+            <div class="forgeversions">
+                <h3>Forge 1.10</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A6170" target="_blank">1.10.2</a>
+            </div>
+            <div class="forgeversions">
+                <h3>Forge 1.8</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A5806" target="_blank">1.8.9</a>
+            </div>
+            <div class="forgeversions">
+                <h3>Forge 1.7</h3>
+                <a class="button" href="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/files/all?filter-game-version=2020709689%3A4449" target="_blank">1.7.10</a>
+            </div>
+        </div>
+    </article>
+</section>
 
-    <footer id="pagefooter">
-        <p id="pagefootertext">Copyright 2021 &copy; Autovw</p>
-    </footer>
-</div>
+<footer>
+    <p>Copyright 2022 &copy; Autovw</p>
+</footer>
 </body>
 </html>
