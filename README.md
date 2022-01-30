@@ -11,7 +11,7 @@ Just me messing around with HTML, nothing you should be worrying about. I guess.
 |Social media links|✔️|
 |Footer and Sidebar|✔️|
 |Use system font|✔️|
-|About me-page|❌|
-|Mobile compatibility|❌|
+|About me-page|✔️|
+|Mobile compatibility|✔️|
 |Better descriptions|❌|
 |Final, responsive design|❌|
