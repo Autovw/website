@@ -183,6 +183,15 @@ input[type="checkbox"] { display: none; }
     display: flex;
 }
 
+#modscontent a:hover {
+    background-color: #6774ea;
+}
+
+#modscontent a:hover .modloader,
+#modscontent a:hover .modversion {
+    background-color: #ffffff;
+}
+
 .modlogo {
     max-width: 128px;
     margin: 1%;
